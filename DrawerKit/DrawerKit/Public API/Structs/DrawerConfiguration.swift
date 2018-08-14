@@ -83,7 +83,7 @@ public struct DrawerConfiguration {
     /// partially expanded state. The default value is `true`.
     public var supportsPartialExpansion: Bool
     
-    /// When `false`, collapsed drawer is never dismissed.
+    /// When `false`, collapsed drawer is never dismissed. The default value is `true`.
     public var canDismissCollapsedDrawer: Bool
 
     /// When `true`, dismissing the drawer from its fully expanded state can result
