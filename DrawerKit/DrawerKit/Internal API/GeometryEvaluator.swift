@@ -99,7 +99,8 @@ extension GeometryEvaluator {
                                 drawerFullY: CGFloat) -> CGFloat {
         switch state {
         case .collapsed:
-            return containerViewHeight - drawerCollapsedHeight
+            let offset: CGFloat = canDismissCollapsedDrawer ? 0 : drawerCollapsedHeight
+            return containerViewHeight - offset
         case .partiallyExpanded:
             return drawerPartialY(drawerPartialHeight: drawerPartialHeight,
                                   containerViewHeight: containerViewHeight)
